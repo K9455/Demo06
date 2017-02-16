@@ -8,6 +8,31 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="1175*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="17*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="trucksbutton" Content="Trucks" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="247,720,0,-319" RenderTransformOrigin="3.882,-9" Width="140" Grid.Column="3" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="64"
+            Click="trucksbutton_Click">
+            
+            <Button.RenderTransform>
+                <CompositeTransform ScaleY="-1" TranslateY="646" Rotation="-360.115"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="carsbutton"
+                Click="carsbutton_Click" Content="Cars" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="3" Margin="470,152,0,0" Height="64" Width="140"/>
+        <TextBlock x:Name="truckstextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Margin="312,309,0,0" Grid.Column="3" Height="30" Width="124"/>
+        <TextBlock x:Name="carstextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="30" Margin="641,306,-757,0" RenderTransformOrigin="0.5,0.5" Width="140">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="-1" ScaleX="-1" Rotation="-178.966"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
 
     </Grid>
 </Page>
